@@ -1,3 +1,6 @@
+<!-- ========================= -->
+<!-- FILE: index.html -->
+<!-- ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,181 +10,130 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!-- Custom CSS -->
   <style>
-    body {
-      background-color: #0f0f0f;
-      color: #f1f1f1;
-      scroll-behavior: smooth;
-    }
-    .accent {
-      color: #dc2626; /* red */
-    }
-    .btn-accent {
-      background-color: #dc2626;
-      color: #fff;
-      border: none;
-    }
-    .btn-accent:hover {
-      background-color: #b91c1c;
-      color: #fff;
-    }
-    .section-padding {
-      padding: 100px 0;
-    }
-    .card-custom {
-      background-color: #1a1a1a;
-      border: none;
-      border-radius: 16px;
-    }
-    .profile-img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #dc2626;
-    }
+    body { background:#0f0f0f; color:#ffffff; }
+    a, p, li, span, h1, h2, h3, h4, h5 { color:#ffffff; }
+    .accent { color:#dc2626; }
+    .btn-accent { background:#dc2626; color:#fff; border:none; }
+    .btn-accent:hover { background:#b91c1c; }
+    .page { animation: fadeIn .6s ease-in-out; }
+    @keyframes fadeIn { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none} }
   </style>
 </head>
-<body>
+<body class="page">
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#0f0f0f">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:#0f0f0f">
   <div class="container">
-    <a class="navbar-brand fw-bold accent" href="#">Kemal.dev</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+    <a class="navbar-brand accent fw-bold" href="index.html">Kemal.dev</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="section-padding text-center d-flex align-items-center" style="min-height:100vh">
+<section class="vh-100 d-flex align-items-center text-center">
   <div class="container animate__animated animate__fadeIn">
     <h1 class="display-4 fw-bold">Kemal Farabi Habidillah</h1>
     <h2 class="accent mb-4">Web Developer (Laravel)</h2>
-    <p class="lead mx-auto" style="max-width:700px">
-      I build modern, scalable, and clean web applications using Laravel, PHP, and MySQL.
-      Passionate about backend logic, e-commerce systems, and elegant UI.
-    </p>
-    <div class="mt-4">
-      <a href="#projects" class="btn btn-accent btn-lg me-2">View Projects</a>
-      <a href="https://github.com/Kemal230" target="_blank" class="btn btn-outline-light btn-lg">GitHub</a>
-    </div>
+    <p class="lead">Building scalable and clean web applications with Laravel, PHP, and MySQL.</p>
+    <a href="projects.html" class="btn btn-accent btn-lg mt-3">View My Work</a>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section-padding">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-5 text-center mb-4 animate__animated animate__fadeInLeft">
-        <!-- GANTI src DENGAN FOTO LU -->
-        <img src="profile.jpg" alt="Kemal" class="profile-img">
-      </div>
-      <div class="col-md-7 animate__animated animate__fadeInRight">
-        <h3 class="fw-bold mb-3">About <span class="accent">Me</span></h3>
-        <p>
-          I am a Web Developer with hands-on experience in Laravel 12, PHP, and MySQL.
-          I specialize in developing full-featured e-commerce applications with authentication,
-          role-based access control, reporting systems, and REST API integration.
-        </p>
-        <p>
-          I enjoy turning complex requirements into simple, maintainable, and scalable solutions.
-        </p>
-      </div>
-    </div>
+</body>
+</html>
+
+
+<!-- ========================= -->
+<!-- FILE: about.html -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Kemal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    body{background:#0f0f0f;color:#fff}
+    .accent{color:#dc2626}
+    img{border:4px solid #dc2626;border-radius:50%}
+  </style>
+</head>
+<body class="page animate__animated animate__fadeIn">
+<div class="container py-5 text-center">
+  <img src="profile.jpg" width="200" class="mb-4">
+  <h1 class="fw-bold">About <span class="accent">Me</span></h1>
+  <p class="mt-4">
+    I am a Web Developer with hands-on experience in Laravel, PHP, and MySQL.
+    I focus on backend development, e-commerce systems, and REST API integration.
+  </p>
+  <a href="index.html" class="btn btn-outline-light mt-3">Back</a>
+</div>
+</body>
+</html>
+
+
+<!-- ========================= -->
+<!-- FILE: projects.html -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kemal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    body{background:#0f0f0f;color:#fff}
+    .accent{color:#dc2626}
+    .card{background:#1a1a1a}
+  </style>
+</head>
+<body class="page animate__animated animate__fadeInUp">
+<div class="container py-5">
+  <h1 class="fw-bold text-center">My <span class="accent">Projects</span></h1>
+  <div class="card p-4 mt-5">
+    <h3>E-Widia – E-Commerce</h3>
+    <p>Laravel-based e-commerce platform with RBAC, cart, checkout, discounts, and reports.</p>
+    <a href="https://github.com/Kemal230/E-Commers" target="_blank" class="btn btn-accent">GitHub Repo</a>
   </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section-padding bg-black">
-  <div class="container">
-    <h3 class="fw-bold text-center mb-5">My <span class="accent">Skills</span></h3>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card card-custom p-4 h-100 animate__animated animate__fadeInUp">
-          <h5 class="accent">Backend</h5>
-          <ul>
-            <li>PHP (Native)</li>
-            <li>Laravel 12</li>
-            <li>REST API</li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom p-4 h-100 animate__animated animate__fadeInUp animate__delay-1s">
-          <h5 class="accent">Frontend</h5>
-          <ul>
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript (Basic–Intermediate)</li>
-            <li>Bootstrap</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom p-4 h-100 animate__animated animate__fadeInUp animate__delay-2s">
-          <h5 class="accent">Tools</h5>
-          <ul>
-            <li>Git & GitHub</li>
-            <li>Laragon</li>
-            <li>VS Code</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="text-center mt-4">
+    <a href="index.html" class="btn btn-outline-light">Back</a>
   </div>
-</section>
+</div>
+</body>
+</html>
 
-<!-- PROJECTS -->
-<section id="projects" class="section-padding">
-  <div class="container">
-    <h3 class="fw-bold text-center mb-5">Featured <span class="accent">Project</span></h3>
-    <div class="card card-custom p-5 animate__animated animate__fadeInUp">
-      <h4 class="fw-bold">E-Widia – E-Commerce Web Application</h4>
-      <p class="mt-3">
-        Full-stack e-commerce platform built with Laravel 12 using MVC architecture and relational database design.
-      </p>
-      <ul>
-        <li>Authentication & Role-Based Access Control</li>
-        <li>Cart, Checkout, Discounts & Bundles</li>
-        <li>Sales Reports & Best/Non-Selling Product Analysis</li>
-      </ul>
-      <p class="fw-semibold">Tech Stack: Laravel, PHP, MySQL, Bootstrap, Tailwind CSS</p>
-      <a href="https://github.com/Kemal230/E-Commers" target="_blank" class="btn btn-accent mt-3">View Repository</a>
-    </div>
-  </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact" class="section-padding bg-black">
-  <div class="container text-center">
-    <h3 class="fw-bold mb-4">Get In <span class="accent">Touch</span></h3>
-    <p>Email: <a href="mailto:kemalfarabihabi@gmail.com" class="accent">kemalfarabihabi@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kemal-farabi-habidillah" target="_blank" class="accent">kemal-farabi-habidillah</a></p>
-  </div>
-</section>
-
-<footer class="text-center py-4" style="background:#0f0f0f">
-  <small>© 2025 Kemal Farabi Habidillah | Web Developer</small>
-</footer>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<!-- ========================= -->
+<!-- FILE: contact.html -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kemal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{background:#0f0f0f;color:#fff}
+    .accent{color:#dc2626}
+  </style>
+</head>
+<body class="page animate__animated animate__fadeIn">
+<div class="container py-5 text-center">
+  <h1>Get In <span class="accent">Touch</span></h1>
+  <p class="mt-4">Email: kemalfarabihabi@gmail.com</p>
+  <p>LinkedIn: kemal-farabi-habidillah</p>
+  <a href="index.html" class="btn btn-outline-light mt-3">Back</a>
+</div>
 </body>
 </html>
