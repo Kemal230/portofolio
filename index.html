@@ -4,111 +4,184 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kemal Farabi Habidillah | Web Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800">
 
-  <!-- HERO -->
-  <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-    <div class="max-w-6xl mx-auto px-6 py-20">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Kemal Farabi Habidillah</h1>
-      <h2 class="text-xl md:text-2xl mb-6">Web Developer (Laravel)</h2>
-      <p class="max-w-2xl text-lg">
-        Web Developer with hands-on experience in building web-based applications using Laravel, PHP, and MySQL.
-        Specialized in e-commerce systems, REST API integration, and modern UI development.
-      </p>
-      <div class="mt-8 flex gap-4">
-        <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold shadow">View Projects</a>
-        <a href="https://github.com/Kemal230" target="_blank" class="border border-white px-6 py-3 rounded-xl font-semibold">GitHub</a>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      scroll-behavior: smooth;
+    }
+    .accent {
+      color: #dc2626; /* red */
+    }
+    .btn-accent {
+      background-color: #dc2626;
+      color: #fff;
+      border: none;
+    }
+    .btn-accent:hover {
+      background-color: #b91c1c;
+      color: #fff;
+    }
+    .section-padding {
+      padding: 100px 0;
+    }
+    .card-custom {
+      background-color: #1a1a1a;
+      border: none;
+      border-radius: 16px;
+    }
+    .profile-img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #dc2626;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:#0f0f0f">
+  <div class="container">
+    <a class="navbar-brand fw-bold accent" href="#">Kemal.dev</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="section-padding text-center d-flex align-items-center" style="min-height:100vh">
+  <div class="container animate__animated animate__fadeIn">
+    <h1 class="display-4 fw-bold">Kemal Farabi Habidillah</h1>
+    <h2 class="accent mb-4">Web Developer (Laravel)</h2>
+    <p class="lead mx-auto" style="max-width:700px">
+      I build modern, scalable, and clean web applications using Laravel, PHP, and MySQL.
+      Passionate about backend logic, e-commerce systems, and elegant UI.
+    </p>
+    <div class="mt-4">
+      <a href="#projects" class="btn btn-accent btn-lg me-2">View Projects</a>
+      <a href="https://github.com/Kemal230" target="_blank" class="btn btn-outline-light btn-lg">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center mb-4 animate__animated animate__fadeInLeft">
+        <!-- GANTI src DENGAN FOTO LU -->
+        <img src="profile.jpg" alt="Kemal" class="profile-img">
+      </div>
+      <div class="col-md-7 animate__animated animate__fadeInRight">
+        <h3 class="fw-bold mb-3">About <span class="accent">Me</span></h3>
+        <p>
+          I am a Web Developer with hands-on experience in Laravel 12, PHP, and MySQL.
+          I specialize in developing full-featured e-commerce applications with authentication,
+          role-based access control, reporting systems, and REST API integration.
+        </p>
+        <p>
+          I enjoy turning complex requirements into simple, maintainable, and scalable solutions.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h3 class="text-3xl font-bold mb-6">About Me</h3>
-    <p class="max-w-3xl leading-relaxed">
-      I am a Web Developer focused on backend and full-stack development using Laravel.
-      I have experience developing complete e-commerce platforms with authentication,
-      role-based access control, cart & checkout systems, reporting dashboards, and promotional features.
-      I enjoy building clean, scalable, and maintainable web applications.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="bg-white">
-    <div class="max-w-6xl mx-auto px-6 py-16">
-      <h3 class="text-3xl font-bold mb-8">Skills</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <h4 class="font-semibold text-xl mb-3">Backend</h4>
-          <ul class="space-y-2">
+<!-- SKILLS -->
+<section id="skills" class="section-padding bg-black">
+  <div class="container">
+    <h3 class="fw-bold text-center mb-5">My <span class="accent">Skills</span></h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-custom p-4 h-100 animate__animated animate__fadeInUp">
+          <h5 class="accent">Backend</h5>
+          <ul>
             <li>PHP (Native)</li>
             <li>Laravel 12</li>
             <li>REST API</li>
             <li>MySQL</li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-semibold text-xl mb-3">Frontend</h4>
-          <ul class="space-y-2">
-            <li>HTML5</li>
-            <li>CSS3</li>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom p-4 h-100 animate__animated animate__fadeInUp animate__delay-1s">
+          <h5 class="accent">Frontend</h5>
+          <ul>
+            <li>HTML5 & CSS3</li>
             <li>JavaScript (Basic–Intermediate)</li>
             <li>Bootstrap</li>
             <li>Tailwind CSS</li>
           </ul>
         </div>
-        <div>
-          <h4 class="font-semibold text-xl mb-3">Tools</h4>
-          <ul class="space-y-2">
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom p-4 h-100 animate__animated animate__fadeInUp animate__delay-2s">
+          <h5 class="accent">Tools</h5>
+          <ul>
             <li>Git & GitHub</li>
             <li>Laragon</li>
-            <li>Visual Studio Code</li>
+            <li>VS Code</li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
-    <h3 class="text-3xl font-bold mb-8">Projects</h3>
-
-    <div class="bg-white rounded-2xl shadow p-6">
-      <h4 class="text-2xl font-semibold mb-2">E-Widia – E-Commerce Web Application</h4>
-      <p class="mb-4">
-        Full-stack e-commerce application built with Laravel 12.
-        Implements MVC architecture and relational database design to support scalable business operations.
+<!-- PROJECTS -->
+<section id="projects" class="section-padding">
+  <div class="container">
+    <h3 class="fw-bold text-center mb-5">Featured <span class="accent">Project</span></h3>
+    <div class="card card-custom p-5 animate__animated animate__fadeInUp">
+      <h4 class="fw-bold">E-Widia – E-Commerce Web Application</h4>
+      <p class="mt-3">
+        Full-stack e-commerce platform built with Laravel 12 using MVC architecture and relational database design.
       </p>
-      <ul class="list-disc ml-6 mb-4 space-y-1">
+      <ul>
         <li>Authentication & Role-Based Access Control</li>
-        <li>Product, Category, and User Management (CRUD)</li>
-        <li>Shopping Cart & Checkout System</li>
-        <li>Cross-selling, Bundles, and Discounts</li>
-        <li>Sales Reports & Best-Selling Product Analysis</li>
+        <li>Cart, Checkout, Discounts & Bundles</li>
+        <li>Sales Reports & Best/Non-Selling Product Analysis</li>
       </ul>
-      <p class="font-semibold">Tech Stack:</p>
-      <p>Laravel 12, PHP, MySQL, JavaScript, Bootstrap, Tailwind CSS</p>
-      <div class="mt-4">
-        <a href="https://github.com/Kemal230/E-Commers" target="_blank" class="text-indigo-600 font-semibold">View Repository</a>
-      </div>
+      <p class="fw-semibold">Tech Stack: Laravel, PHP, MySQL, Bootstrap, Tailwind CSS</p>
+      <a href="https://github.com/Kemal230/E-Commers" target="_blank" class="btn btn-accent mt-3">View Repository</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section class="bg-gray-900 text-white">
-    <div class="max-w-6xl mx-auto px-6 py-16">
-      <h3 class="text-3xl font-bold mb-6">Contact</h3>
-      <p>Email: <a href="mailto:kemalfarabihabi@gmail.com" class="underline">kemalfarabihabi@gmail.com</a></p>
-      <p class="mt-2">LinkedIn: <a href="https://www.linkedin.com/in/kemal-farabi-habidillah" target="_blank" class="underline">kemal-farabi-habidillah</a></p>
-    </div>
-  </section>
+<!-- CONTACT -->
+<section id="contact" class="section-padding bg-black">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-4">Get In <span class="accent">Touch</span></h3>
+    <p>Email: <a href="mailto:kemalfarabihabi@gmail.com" class="accent">kemalfarabihabi@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/kemal-farabi-habidillah" target="_blank" class="accent">kemal-farabi-habidillah</a></p>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="text-center py-6 text-sm bg-gray-100">
-    © 2025 Kemal Farabi Habidillah — Web Developer
-  </footer>
+<footer class="text-center py-4" style="background:#0f0f0f">
+  <small>© 2025 Kemal Farabi Habidillah | Web Developer</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
